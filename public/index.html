@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>| Chat N' Dice |</title>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <script src="client.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <h1>Chat N' Dice</h1>
+      <div id="userContainer"></div>
+      <div id="user">
+        <form id="formUser">
+          <input type="text" id="inputUser" required /><button>
+            Your name, please!
+          </button>
+        </form>
+      </div>
+      <div id="message">
+        <form id="formMessage">
+          <input type="text" id="inputMessage" /><button>Send a message</button>
+        </form>
+      </div>
+      <h2>All messages</h2>
+      <ul id="messages"></ul>
+      <div id="gambleSection">
+        <h3 id="playerData"></h3>
+        <button id="diceButton" disabled>Click to ROLL</button>
+        <ul id="userData"></ul>
+      </div>
+    </main>
+    <footer id="footer">
+      <p>Socket.IO | Project by Fredric Ryding</p>
+    </footer>
+    <script src="/socket.io/socket.io.js"></script>
+  </body>
+</html>
